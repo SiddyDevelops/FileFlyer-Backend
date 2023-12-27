@@ -8,9 +8,14 @@
   <img width="900" height="500" src="https://github.com/SiddyDevelops/FileFlyer/assets/72121163/83d89782-4266-47b1-b691-114e8595aedc">
 </p>
 
-- Share the uploaded file (identified by uuid) via link or email.
+- Share the uploaded file (identified by uuid) via link.
 <p align="center">
   <img width="900" height="500" src="https://github.com/SiddyDevelops/FileFlyer/assets/72121163/b43d48de-838e-40ba-a154-2c0418e97dfe">
+</p>
+
+- Share the uploaded file (identified by uuid) via email.
+<p align="center">
+  <img width="900" height="500" src="https://github.com/SiddyDevelops/FileFlyer/assets/72121163/85a9a320-7ffa-49f8-a408-f552a6909e40">
 </p>
 
 ## 🛠 Installation & Set Up

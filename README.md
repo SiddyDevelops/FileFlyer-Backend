@@ -3,20 +3,42 @@
 > An web application to share files by uploading docs/files to mongoDB and download it via link which can also be shared via mail.
 
 ## 📱Screenshots:
+- Upload file to server using API endpoint.
 <p align="center">
-  <img width="160" height="375" src="https://github.com/SiddyDevelops/Plotline-AppDev/assets/72121163/dbeff383-0732-46f7-a9b9-c776b39cf0d0">
-   <img width="160" height="375" src="https://github.com/SiddyDevelops/Plotline-AppDev/assets/72121163/dd913733-da17-49dd-8aaa-2c9f26618869">
-  <img width="160" height="375" src="https://github.com/SiddyDevelops/Plotline-AppDev/assets/72121163/cfc3ddd5-835c-4241-a605-7b215829ab4c">
-  <img width="160" height="375" src="https://github.com/SiddyDevelops/Plotline-AppDev/assets/72121163/0036ee59-2289-4dd0-b5c3-ba7fdaedc599">
-  <img width="160" height="375" src="https://github.com/SiddyDevelops/Plotline-AppDev/assets/72121163/c4317d3e-9aea-41b4-ba1b-5f05363b1daa">
+  <img width="900" height="500" src="https://github.com/SiddyDevelops/FileFlyer/assets/72121163/83d89782-4266-47b1-b691-114e8595aedc">
 </p>
 
+- Share the uploaded file (identified by uuid) via link.
+<p align="center">
+  <img width="900" height="500" src="https://github.com/SiddyDevelops/FileFlyer/assets/72121163/b43d48de-838e-40ba-a154-2c0418e97dfe">
+</p>
 
-## ⬇ Installation
+- Share the uploaded file (identified by uuid) via email.
+<p align="center">
+  <img width="900" height="500" src="https://github.com/SiddyDevelops/FileFlyer/assets/72121163/85a9a320-7ffa-49f8-a408-f552a6909e40">
+</p>
 
-- Clone this repository to your local system. 
-- Set all the environment variable in ``.env`` file. (Brevo SMTP API and MongoDB Atlas cluster)
-- Run the 
+## 🛠 Installation & Set Up
+
+1. Clone this repository to your local system.
+2. Set all the environment variable in ``.env`` file. (Brevo SMTP API and MongoDB Atlas cluster)
+3. Install and use the correct version of Node using [NVM](https://github.com/nvm-sh/nvm)
+
+   ```sh
+   nvm install
+   ```
+
+4. Install dependencies
+
+   ```sh
+   yarn
+   ```
+
+5. Start the development server
+
+   ```sh
+   npm start
+   ```
 
 ## 🛠️ Tools & Technology
 

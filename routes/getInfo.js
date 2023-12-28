@@ -1,31 +1,31 @@
 const router = require('express').Router();
-const File = require('../models/file');
+const Info = require('../models/info');
 
 router.get('/:uuid', async (req,res) => {
     try {
-        const file = await File.findOne({
+        const information = await Info.findOne({
             uuid: req.params.uuid
         });
-        if(!file) {
+        if(!information) {
             return res.render('download', {
                 error: 'Link has been expired.',
                 status: 400,
-                message: 'Error: Link has been expired.',
+                message: 'Error: All fields are required',
                 data: null
             });
         }
         return res.render('download', {
-            uuid: file.uuid,
-            fileName: file.filename,
-            fileSize: file.size,
-            downloadLink: `${process.env.APP_BASE_URL}/files/download/${file.uuid}`
+            uuid: information.uuid,
+            fileName: `${information.information}`,
+            fileSize: 'NULL',
+            downloadLink: `${process.env.APP_BASE_URL}/api/info/textCopy/${information.uuid}`
         });
     }catch(err) {
         return res.render('download', {
             error: 'Link has been expired.',
             status: 400,
-            message: 'Something went wrong..',
-            data: null
+            message: 'Error: Something went wrong.',
+            data: null,
         });
     }
 });

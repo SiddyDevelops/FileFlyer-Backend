@@ -16,6 +16,15 @@
         <img class="download__icon" src="/img/download-sd.svg" alt="fileflyer-download">
         <% if(locals.error){ %>
         <h4><%= locals.error %> 😏</h4>
+        <% } else if(fileSize == 'NULL') { %>
+        <h2>Your text is ready to copy</h2>
+        <p>Text expires in 24 hours</p>
+        <div class="download__meta">
+            <h4><%= fileName %></h4>
+        </div>
+        <div class="send-btn-container">
+            <a href="<%= downloadLink %>">Copy text</a>
+        </div>
         <% } else { %>
         <h2>Your file is ready to download</h2>
         <p>Link expires in 24 hours</p>

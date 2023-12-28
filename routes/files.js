@@ -31,7 +31,9 @@ router.post('/',(req,res)=>{
 
         if(err) {
             return res.status(500).send({
-                error: err.message
+                status: 400,
+                message: err.message,
+                data: null
             });
         }
 
@@ -43,7 +45,10 @@ router.post('/',(req,res)=>{
             size: req.file.size
         });
         const response = await file.save();
-        return res.json({
+        return res.status(500).json({
+            status: 200,
+            message: 'File uploaded sucessfully.',
+            data: response,
             file: `${process.env.APP_BASE_URL}/files/${response.uuid}`
         });
     });
@@ -54,17 +59,14 @@ router.post('/send', async (req,res)=>{
     const { uuid, emailTo, emailFrom } = req.body;
     if(!uuid || !emailTo || !emailFrom) {
         return res.status(422).send({
-            error: 'All field are required.'
+            status: 422,
+            message: 'All field are required.',
+            data: null
         });
     }
 
     // Get data from DB
     const file = await File.findOne({ uuid: uuid});
-    if(file.sender) {
-        return res.status(422).send({
-            error: 'Email already sent.'
-        });
-    }
 
     file.sender = emailFrom;
     file.receiver = emailTo;
@@ -84,8 +86,10 @@ router.post('/send', async (req,res)=>{
             expires: '24 Hours'
         })
     });
-    return res.send({
-        success: true
+    return res.status(200).send({
+        status: 200,
+        message: 'Email sent successfully.',
+        data: response
     });
 });
 

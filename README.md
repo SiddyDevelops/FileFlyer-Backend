@@ -18,6 +18,22 @@
   <img width="900" height="500" src="https://github.com/SiddyDevelops/FileFlyer/assets/72121163/85a9a320-7ffa-49f8-a408-f552a6909e40">
 </p>
 
+- Save text to server.
+<p align="center">
+  <img width="900" height="500" src="https://github.com/SiddyDevelops/FileFlyer/assets/72121163/4e0a6d39-7ab9-4ac2-8c65-18d3cfed05eb">
+</p>
+
+- Copy text to clipboard.
+<p align="center">
+  <img width="900" height="500" src="https://github.com/SiddyDevelops/FileFlyer/assets/72121163/9b5cdae4-8ae4-43ee-83bd-4034d90a18cb">
+</p>
+<p align="center">
+  <img width="900" height="500" src="https://github.com/SiddyDevelops/FileFlyer/assets/72121163/eabd8083-8d29-4e5a-8f33-304a25e1941b">
+</p>
+<p align="center">
+  <img width="900" height="500" src="https://github.com/SiddyDevelops/FileFlyer/assets/72121163/b80269a0-b245-46f8-a17d-c5bf7a7a43e6">
+</p>
+
 ## 🛠 Installation & Set Up
 
 1. Clone this repository to your local system.
